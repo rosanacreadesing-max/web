@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosana Gutiérrez Crea | Diseño Digital y Web</title>
+    
+    <!-- COMENTARIO DE RECARGA: Si la vista previa está en blanco, una pequeña edición como esta ayuda a que el entorno se refresque. --><script src="https://cdn.tailwindcss.com"></script>
+    
+
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-orange': '#FF7700', // Naranja vibrante para el acento digital
+                        'dark-bg': '#101010', // Fondo muy oscuro
+                        'dark-card': '#1a1a1a', // Fondo de tarjeta ligeramente más claro
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para el efecto de confianza y modernidad */
+        .shadow-orange { /* Clase de sombra adaptada al color naranja */
+            box-shadow: 0 4px 6px -1px rgba(255, 119, 0, 0.1), 0 2px 4px -2px rgba(255, 119, 0, 0.06);
+        }
+        .text-neon {
+            text-shadow: 0 0 5px rgba(255, 119, 0, 0.7);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(255, 119, 0, 0.3), 0 4px 6px -2px rgba(255, 119, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-white font-sans antialiased">
+
+    
+    <!-- Barra de Navegación (Sticky Header) --><header class="sticky top-0 z-50 bg-dark-bg/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            
+            <!-- Logo - Lado Izquierdo --><a href="#" class="text-2xl font-extrabold tracking-tight text-white hover:text-primary-orange transition duration-300 flex items-center">
+                <img src="logo_rosana.jpg" 
+                     alt="Rosana Gutiérrez Crea Logo"
+                     class="h-8 w-auto object-contain mr-3">
+                <!-- El texto principal de la marca es opcional si el logo es claro --></a>
+            
+            <!-- Navegación de Escritorio --><nav class="hidden md:flex space-x-8">
+                <a href="#servicios" class="text-gray-300 hover:text-primary-orange transition duration-300">Servicios</a>
+                <a href="#proyectos" class="text-gray-300 hover:text-primary-orange transition duration-300">Proyectos</a>
+                <a href="#sobremi" class="text-gray-300 hover:text-primary-orange transition duration-300">Sobre Mí</a>
+                <a href="#contacto" class="px-4 py-2 bg-primary-orange text-dark-bg font-semibold rounded-lg cta-button">
+                    Contacto
+                </a>
+            </nav>
+            
+            <!-- Botón de Menú Móvil --><button class="md:hidden text-white focus:outline-none" aria-label="Menú">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Sección 1: Hero (Impacto Principal) --><section class="relative pt-24 pb-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Columna Izquierda: Títulos y CTA --><div class="md:col-span-7 z-10 text-center md:text-left">
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-4">
+                        <span class="block text-primary-orange text-neon">Rosana Gutiérrez Crea:</span> Tu Impulso Digital.
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-300 mb-8 max-w-xl mx-auto md:mx-0">
+                        Diseño web, branding y estrategias digitales que convierten negocios locales y autónomos en <strong class="font-bold text-white">referentes online.</strong>
+                    </p>
+                    
+                    <!-- Botones CTA --><div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                        <a href="#contacto" class="px-8 py-4 bg-primary-orange text-dark-bg font-bold text-lg rounded-xl cta-button shadow-orange">
+                            Hablemos de tu Proyecto Ahora
+                        </a>
+                        <a href="#servicios" class="px-8 py-4 border border-gray-700 text-white font-medium text-lg rounded-xl hover:bg-gray-800 transition duration-300">
+                            Ver Servicios Clave
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Imagen de Impacto (Foto Destacada) --><div class="md:col-span-5 relative flex justify-center z-0">
+                    <img src="foto_rosana.jpg" 
+                         alt="Retrato profesional de Rosana Gutiérrez"
+                         class="rounded-3xl object-cover w-full max-w-lg h-auto border-2 border-primary-orange shadow-2xl transition duration-500 ease-in-out hover:scale-[1.02]">
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Sección 2: Servicios --><section id="servicios" class="py-24 bg-dark-card border-t border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Lo que tu negocio <span class="text-primary-orange">Necesita</span></h2>
+                <p class="text-xl text-gray-400 mb-16 max-w-3xl mx-auto">
+                    Transformo tus ideas en resultados visibles. Estos son los tres pilares para hacer crecer tu presencia digital.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Tarjeta 1: Diseño Web --><div class="bg-dark-bg p-8 rounded-2xl shadow-xl hover:shadow-primary-orange/20 transition duration-300 border border-gray-800">
+                        <svg class="w-12 h-12 text-primary-orange mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Diseño Web & UX</h3>
+                        <p class="text-gray-400 text-left">
+                            Una web profesional, rápida y optimizada para la venta. Tu tienda abierta 24/7.
+                            <br><br>
+                            Diseño 100% responsive, intuitivo y centrado en el usuario para garantizar que cada visita se convierta en un cliente.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 2: Branding --><div class="bg-dark-bg p-8 rounded-2xl shadow-xl hover:shadow-primary-orange/20 transition duration-300 border border-gray-800">
+                        <svg class="w-12 h-12 text-primary-orange mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21A9 9 0 013 12h4m2 5a9 9 0 01-2-5h4m-7 0a9 9 0 019 9v2"></path></svg>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Identidad de Marca & Branding</h3>
+                        <p class="text-gray-400 text-left">
+                            Tu marca no es solo un logo. Es la historia que cuentas.
+                            <br><br>
+                            Creamos una identidad visual coherente y memorable que enamora a tu cliente ideal, desde el logotipo hasta el manual de marca.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 3: Marketing --><div class="bg-dark-bg p-8 rounded-2xl shadow-xl hover:shadow-primary-orange/20 transition duration-300 border border-gray-800">
+                        <svg class="w-12 h-12 text-primary-orange mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8m3-11H3a2 2 0 00-2 2v14a2 2 0 002 2h18a2 2 0 002-2V7a2 2 0 00-2-2z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Marketing y Digitalización</h3>
+                        <p class="text-gray-400 text-left">
+                            Atrae tráfico cualificado y optimiza procesos. La guía que necesitas.
+                            <br><br>
+                            Estrategias de contenido y redes sociales que te posicionan como experto y te permiten ahorrar tiempo y recursos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Sobre Mí / Valor --><section id="sobremi" class="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold mb-4">¿Por qué trabajar con Rosana?</h2>
+            <p class="text-xl text-gray-400 mb-12">
+                Más allá del diseño, ofrezco la tranquilidad de tener un socio digital que entiende tu negocio.
+            </p>
+            
+            <div class="grid sm:grid-cols-3 gap-8 text-left">
+                
+                <!-- Valor 1: Cercanía --><div class="p-6 border-l-4 border-primary-orange bg-dark-card rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Trato Cercano y Sin Rodeos</h3>
+                    <p class="text-gray-400">
+                        Soy autónoma como tú. Entiendo tus retos y hablo tu idioma. Olvídate de agencias complejas y procesos lentos.
+                    </p>
+                </div>
+                
+                <!-- Valor 2: Negocio --><div class="p-6 border-l-4 border-primary-orange bg-dark-card rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Diseño con Mente de Negocio</h3>
+                    <p class="text-gray-400">
+                        Cada pixel y cada estrategia están pensados para un solo objetivo: aumentar tus ventas y tu visibilidad.
+                    </p>
+                </div>
+                
+                <!-- Valor 3: Integral --><div class="p-6 border-l-4 border-primary-orange bg-dark-card rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Digitalización Completa</h3>
+                    <p class="text-gray-400">
+                        No solo diseño: te guío desde el branding hasta la gestión de redes. Solución integral para un éxito sostenido.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Proyectos (Portafolio Mockup) --><section id="proyectos" class="py-24 bg-dark-card border-t border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Proyectos que <span class="text-primary-orange">Convierten</span></h2>
+                <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+                    Una imagen vale más que mil palabras. Estos son algunos ejemplos de negocios que ya están triunfando.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Proyecto 1 --><div class="bg-dark-bg rounded-xl overflow-hidden group border border-gray-800 hover:border-primary-orange transition duration-300">
+                        <img src="https://placehold.co/600x400/1a1a1a/9ca3af?text=Web+Servicios" 
+                             alt="Web de Servicios Profesionales" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-bold text-primary-orange">Caso Éxito: E-commerce</h3>
+                            <p class="text-gray-400 mt-2">Diseño y desarrollo de una tienda online moderna enfocada en la facilidad de compra.</p>
+                            <a href="#" class="text-sm text-white hover:text-primary-orange mt-3 inline-block font-semibold">Ver Caso →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2 --><div class="bg-dark-bg rounded-xl overflow-hidden group border border-gray-800 hover:border-primary-orange transition duration-300">
+                        <img src="https://placehold.co/600x400/1a1a1a/9ca3af?text=Branding+Dise%C3%B1o" 
+                             alt="Identidad de Marca" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-bold text-primary-orange">Rebranding: Identidad Visual</h3>
+                            <p class="text-gray-400 mt-2">Creación de una identidad de marca robusta y memorable para un negocio de hostelería.</p>
+                            <a href="#" class="text-sm text-white hover:text-primary-orange mt-3 inline-block font-semibold">Ver Caso →</a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 --><div class="bg-dark-bg rounded-xl overflow-hidden group border border-gray-800 hover:border-primary-orange transition duration-300">
+                        <img src="https://placehold.co/600x400/1a1a1a/9ca3af?text=Estrategia+Digital" 
+                             alt="Estrategia de Redes Sociales" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-bold text-primary-orange">Estrategia: RRSS y Contenido</h3>
+                            <p class="text-gray-400 mt-2">Plan de marketing digital enfocado a redes sociales para aumentar la comunidad y las ventas.</p>
+                            <a href="#" class="text-sm text-white hover:text-primary-orange mt-3 inline-block font-semibold">Ver Caso →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 5: Contacto (CTA Final) --><section id="contacto" class="py-24">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-5xl font-extrabold mb-4 leading-tight">
+                    ¿Listo para tener la web y la marca que <span class="text-primary-orange text-neon">siempre quisiste</span>?
+                </h2>
+                <p class="text-2xl text-gray-300 mb-10">
+                    Escríbeme sin compromiso. En 48 horas tienes mi propuesta.
+                </p>
+                
+                <!-- Formulario de Contacto (Mockup) --><form class="space-y-6 bg-dark-card p-8 sm:p-12 rounded-2xl border border-gray-800 shadow-2xl">
+                    <div>
+                        <input type="text" placeholder="Nombre y Apellido" required
+                               class="w-full px-5 py-3 border border-gray-700 bg-dark-bg rounded-lg focus:ring-primary-orange focus:border-primary-orange text-white placeholder-gray-500">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email de Contacto" required
+                               class="w-full px-5 py-3 border border-gray-700 bg-dark-bg rounded-lg focus:ring-primary-orange focus:border-primary-orange text-white placeholder-gray-500">
+                    </div>
+                    <div>
+                        <textarea placeholder="Cuéntame sobre tu proyecto y tus objetivos..." rows="4" required
+                                  class="w-full px-5 py-3 border border-gray-700 bg-dark-bg rounded-lg focus:ring-primary-orange focus:border-primary-orange text-white placeholder-gray-500"></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full px-8 py-4 bg-primary-orange text-dark-bg font-bold text-lg rounded-xl cta-button shadow-orange">
+                        Enviar Propuesta
+                    </button>
+                    <p class="text-sm text-gray-500 mt-4">
+                        Prometo no enviarte spam, solo ideas geniales.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página (Footer) --><footer class="bg-dark-bg border-t border-gray-800 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                
+                <!-- Columna 1: Marca --><div>
+                    <h4 class="text-xl font-extrabold text-white mb-4">Rosana Gutiérrez Crea</h4>
+                    <p class="text-gray-400">Impulsando negocios con diseño estratégico.</p>
+                </div>
+                
+                <!-- Columna 2: Navegación --><div>
+                    <h4 class="text-lg font-semibold text-primary-orange mb-4">Explora</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#servicios" class="hover:text-white transition duration-200">Servicios</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition duration-200">Proyectos</a></li>
+                        <li><a href="#sobremi" class="hover:text-white transition duration-200">Sobre Mí</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Contacto Social --><div>
+                    <h4 class="text-lg font-semibold text-primary-orange mb-4">Contacta</h4>
+                    <p class="text-gray-400">Email: hola@rosanagutierrez.com (ejemplo)</p>
+                    <p class="text-gray-400">Teléfono: +34 6XX XXX XXX (ejemplo)</p>
+                    <div class="flex space-x-4 mt-4 justify-center md:justify-start">
+                        
+                        <!-- Icono LinkedIn --><a href="#" aria-label="LinkedIn" class="text-gray-500 hover:text-primary-orange transition duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.13-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.756 7 2.666v6.569z"/></svg>
+                        </a>
+                        <!-- Icono Instagram --><a href="#" aria-label="Instagram" class="text-gray-500 hover:text-primary-orange transition duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.013 4.85.07c3.27.152 4.975 1.782 5.12 5.05.057 1.266.07 1.646.07 4.85s-.013 3.584-.07 4.85c-.145 3.27-1.85 4.975-5.12 5.12-.057.003-4.498.07-4.85.07s-4.437-.013-4.85-.07c-3.27-.145-4.975-1.85-5.12-5.12-.057-1.266-.07-1.646-.07-4.85s.013-3.584.07-4.85c.145-3.27 1.782-4.975 5.05-5.12 1.266-.057 1.646-.07 4.85-.07zm0 1.837c-3.228 0-3.666.012-4.945.07s-2.758 1.488-2.828 4.772c-.06 1.278-.073 1.716-.073 4.945s.013 3.666.073 4.945c.07 3.284 1.55 4.772 4.832 4.772 1.278.06 1.716.073 4.945.073s3.666-.013 4.945-.073c3.282-.07 4.764-1.488 4.772-4.772.06-1.278.073-1.716.073-4.945s-.013-3.666-.073-4.945c-.068-3.284-1.49-4.772-4.772-4.772-1.278-.06-1.716-.07-4.945-.07zm0 2.5c2.613 0 4.72 2.107 4.72 4.72s-2.107 4.72-4.72 4.72-4.72-2.107-4.72-4.72 2.107-4.72 4.72-4.72zm0 1.837c-1.597 0-2.883 1.286-2.883 2.883s1.286 2.883 2.883 2.883 2.883-1.286 2.883-2.883-1.286-2.883-2.883-2.883zm6.541-4.524c-.663 0-1.201.539-1.201 1.201s.538 1.201 1.201 1.201c.663 0 1.201-.539 1.201-1.201s-.538-1.201-1.201-1.201z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center border-t border-gray-800 pt-8">
+                <p class="text-sm text-gray-500">&copy; 2025 Rosana Gutiérrez Crea. Todos los derechos reservados. Diseñado por Rosana.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
